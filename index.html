@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stacey's Contracting LLC | Flooring & Tile Installation</title>
+<meta name="description" content="Flooring and tile installation with free estimates. Text or call Michael at 706-577-5487. Stacey's Contracting LLC: your project, our hands.">
+<meta name="theme-color" content="#101114">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&display=swap">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Stacey's Contracting LLC","slogan":"Your project. Our hands.","telephone":"+1-706-577-5487","description":"Flooring and tile installation. Free estimates."}
+</script>
+
+<style>
+/* Mobile-first. Base styles are for a 360px phone; min-width queries enlarge for tablet and desktop. */
+:root{
+  --ink:#15161a; --paper:#f6f5f3; --white:#fff; --muted:#585b64; --line:#dcdad5;
+  --red:#d8141c; --red-dark:#b30f16; --band:#101114; --band-muted:#b9bbc2;
+  --display:"Barlow Condensed","Arial Narrow","Helvetica Neue Condensed",Impact,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px));overflow-x:hidden}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:.95;letter-spacing:.01em;text-wrap:balance}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{width:100%;max-width:1120px;margin-inline:auto;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:15px;color:var(--red-dark)}
+
+/* buttons: 52px+ tall for thumbs */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border:0;background:var(--red);color:#fff;font-family:var(--display);font-weight:800;font-size:21px;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;cursor:pointer;width:100%;text-align:center}
+.btn:active{background:var(--red-dark)}
+.btn.line{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px #fff}
+.btn.dark{background:var(--ink)}
+.btn svg{width:22px;height:22px;flex:none}
+
+/* header: call + quote visible without scrolling */
+.top{position:sticky;top:0;z-index:50;background:var(--band);color:#fff;padding-top:env(safe-area-inset-top,0px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-block:8px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.mark{flex:none;width:38px;height:38px;background:var(--red);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:22px;clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%)}
+.brand b{font-family:var(--display);text-transform:uppercase;font-size:19px;line-height:1;letter-spacing:.02em;white-space:nowrap}
+.brand small{display:none}
+.top-cta{display:flex;gap:8px;flex:none}
+.top-cta a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 14px;font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:17px;text-decoration:none;color:#fff;background:var(--red)}
+.top-cta a.alt{background:transparent;box-shadow:inset 0 0 0 2px #fff}
+.top-cta .long{display:none}
+
+/* hero */
+.hero{background:var(--band);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-30%;top:-10%;width:70%;height:130%;background:linear-gradient(90deg,transparent 0 30%,var(--red) 30% 38%,transparent 38% 48%,var(--red) 48% 52%,transparent 52%);transform:skewX(-24deg);opacity:.45;pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:28px;padding-block:28px 40px}
+.hero h1{font-size:clamp(46px,13.5vw,72px);font-weight:800;line-height:.92}
+.hero h1 span{color:var(--red)}
+.hero .what{font-size:18px;color:var(--band-muted);margin-top:14px;max-width:34ch}
+.hero .what b{color:#fff;font-weight:600}
+.hero .ctas{display:grid;gap:12px;margin-top:22px}
+.hero .note{margin-top:14px;font-size:15px;color:var(--band-muted)}
+.hero .note b{color:#fff}
+
+.board{position:relative;aspect-ratio:1.35/1;width:100%;max-width:420px}
+.sw{position:absolute;box-shadow:0 14px 24px rgba(0,0,0,.5),inset 0 0 0 1px rgba(255,255,255,.08)}
+.oak{left:2%;top:20%;width:44%;height:66%;transform:rotate(-8deg);background:repeating-linear-gradient(90deg,rgba(60,35,10,0) 0 7px,rgba(60,35,10,.22) 7px 8px),#b98a58}
+.walnut{left:18%;top:8%;width:42%;height:68%;transform:rotate(-2deg);background:repeating-linear-gradient(90deg,rgba(0,0,0,0) 0 9px,rgba(0,0,0,.35) 9px 10px),#4a2f20}
+.ash{left:32%;top:14%;width:38%;height:70%;transform:rotate(5deg);background:repeating-linear-gradient(90deg,rgba(0,0,0,0) 0 8px,rgba(0,0,0,.2) 8px 9px),#8a8a88}
+.marble{left:50%;top:6%;width:42%;height:56%;transform:rotate(-4deg);background:linear-gradient(115deg,transparent 30%,rgba(120,125,135,.45) 31%,transparent 32.5%),linear-gradient(62deg,transparent 52%,rgba(120,125,135,.35) 53%,transparent 54.2%),#ecebe8}
+.slate{left:66%;top:40%;width:30%;height:44%;transform:rotate(3deg);background:#3a3c42}
+.stone{left:44%;top:58%;width:28%;height:34%;transform:rotate(2deg);background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.18),transparent 55%),#8d8b88}
+
+/* sections */
+section{padding-block:48px}
+.head{display:grid;gap:10px;margin-bottom:26px;max-width:620px}
+.head h2{font-size:clamp(38px,10vw,60px);font-weight:800}
+.head p{color:var(--muted)}
+
+/* trust strip + reviews (filled from CONFIG; hidden if empty) */
+.trust{background:var(--white);border-block:1px solid var(--line)}
+.trust ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.trust li{padding:10px 14px;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:17px;border:2px solid var(--ink);display:flex;align-items:center;gap:8px}
+.trust li::before{content:"";width:10px;height:10px;background:var(--red)}
+.trust .wrap{padding-block:18px}
+.reviews{display:grid;gap:14px}
+.rev{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--red);padding:20px}
+.rev p{font-size:18px}
+.rev cite{display:block;margin-top:12px;font-style:normal;font-weight:600;font-size:15px;color:var(--muted)}
+.stars{color:var(--red);letter-spacing:3px;font-size:18px;margin-bottom:8px}
+
+/* services */
+.cards{display:grid;gap:14px}
+.card{background:var(--white);border:1px solid var(--line);display:grid;grid-template-columns:96px 1fr;min-height:96px}
+.chip{border-right:4px solid var(--red)}
+.card div.b{padding:14px 16px;display:grid;gap:4px;align-content:center;min-width:0}
+.card h3{font-size:26px;font-weight:700}
+.card p{color:var(--muted);font-size:16px;line-height:1.4}
+.c1{background:repeating-linear-gradient(90deg,rgba(60,35,10,0) 0 10px,rgba(60,35,10,.25) 10px 11px),#b98a58}
+.c2{background:linear-gradient(115deg,transparent 30%,rgba(120,125,135,.45) 31%,transparent 32.5%),linear-gradient(62deg,transparent 52%,rgba(120,125,135,.35) 53%,transparent 54.2%),#ecebe8}
+.c3{background:repeating-linear-gradient(90deg,transparent 0 31px,rgba(0,0,0,.25) 31px 33px),repeating-linear-gradient(0deg,transparent 0 31px,rgba(0,0,0,.25) 31px 33px),#9a9a96}
+.c4{background:radial-gradient(circle at 50% 50%,#d9d8d4 0 9px,transparent 10px) 0 0/24px 21px,radial-gradient(circle at 50% 50%,#d9d8d4 0 9px,transparent 10px) 12px 10.5px/24px 21px,#2f3136}
+
+/* process */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:4px solid var(--ink)}
+.steps li{display:grid;grid-template-columns:52px 1fr;gap:6px 12px;padding:18px 0;border-bottom:1px solid var(--line)}
+.steps .n{grid-row:span 2;font-family:var(--display);font-weight:800;font-size:46px;line-height:.9;color:var(--red-dark)}
+.steps h3{font-size:25px;font-weight:700}
+.steps p{color:var(--muted);font-size:16px}
+
+/* promise band */
+.why{background:var(--band);color:#fff}
+.why .eyebrow{color:var(--red)}
+.why .head p{color:var(--band-muted)}
+.why ul{list-style:none;margin:0;padding:0;display:grid;gap:22px}
+.why li{border-left:4px solid var(--red);padding-left:16px}
+.why h3{font-size:27px;font-weight:700;margin-bottom:4px}
+.why li p{color:var(--band-muted);font-size:16px}
+
+/* quote form */
+#quote{background:var(--paper)}
+.quote-grid{display:grid;gap:26px}
+.big-phone{font-family:var(--display);font-weight:800;font-size:clamp(46px,14vw,72px);line-height:1;color:var(--red-dark);text-decoration:none;display:inline-block;margin:10px 0 4px}
+.quote-grid .sub{color:var(--muted);max-width:42ch}
+form{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--red);padding:20px;display:grid;gap:14px}
+form h3{font-size:30px;font-weight:700}
+.f{display:grid;gap:6px;min-width:0}
+.f label{font-weight:600;font-size:15px}
+input,select{font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:1px solid #bdbab3;padding:0 14px;min-height:52px;width:100%;border-radius:0;appearance:none;-webkit-appearance:none}
+select{background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 20px) 22px,calc(100% - 14px) 22px;background-size:6px 6px;background-repeat:no-repeat;padding-right:36px}
+input:focus,select:focus{border-color:var(--red)}
+.row2{display:grid;gap:14px}
+.fine{font-size:14px;color:var(--muted)}
+.err{color:var(--red-dark);font-weight:600;font-size:14px;min-height:0}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.done{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--red);padding:24px;display:grid;gap:12px}
+.done h3{font-size:34px;font-weight:800}
+.done[hidden],form[hidden]{display:none}
+
+footer{background:var(--band);color:var(--band-muted);padding-block:30px;font-size:15px}
+footer b{display:block;color:#fff;font-family:var(--display);text-transform:uppercase;font-size:22px;letter-spacing:.03em}
+footer .wrap{display:grid;gap:10px}
+footer a{color:#fff}
+
+/* sticky thumb bar (phones only) */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px max(12px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));background:var(--band);box-shadow:0 -6px 18px rgba(0,0,0,.35)}
+.bar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;font-family:var(--display);font-weight:800;font-size:21px;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;color:#fff;background:var(--red)}
+.bar a.alt{background:transparent;box-shadow:inset 0 0 0 2px #fff}
+.bar svg{width:20px;height:20px}
+
+/* tablet up */
+@media (min-width:640px){
+  body{font-size:18px}
+  .brand small{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--band-muted);margin-top:3px}
+  .brand b{font-size:23px}
+  .top-cta .long{display:inline}
+  .hero .ctas{grid-template-columns:auto auto;justify-content:start}
+  .btn{width:auto}
+  .cards{grid-template-columns:1fr 1fr}
+  .card{grid-template-columns:1fr;grid-template-rows:110px auto}
+  .chip{border-right:0;border-bottom:4px solid var(--red)}
+  .reviews{grid-template-columns:1fr 1fr}
+  .row2{grid-template-columns:1fr 1fr}
+}
+/* desktop */
+@media (min-width:960px){
+  body{padding-bottom:0}
+  .bar{display:none}
+  section{padding-block:84px}
+  .hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center;gap:48px;padding-block:68px 76px}
+  .hero::after{right:-6%;width:46%;opacity:.9}
+  .cards{grid-template-columns:repeat(4,1fr)}
+  .steps{grid-template-columns:repeat(4,1fr);border-bottom:0}
+  .steps li{grid-template-columns:1fr;border-bottom:0;padding:22px 18px 0 0}
+  .steps .n{grid-row:auto;font-size:56px}
+  .why ul{grid-template-columns:repeat(3,1fr);gap:32px}
+  .quote-grid{grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .reviews{grid-template-columns:repeat(3,1fr)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Stacey's Contracting LLC home">
+      <span class="mark" aria-hidden="true">SC</span>
+      <span><b>Stacey's Contracting</b><small>Your project. Our hands.</small></span>
+    </a>
+    <div class="top-cta">
+      <a class="alt" href="tel:+17065775487" data-call>Call<span class="long">&nbsp;Now</span></a>
+      <a href="#quote">Free<span class="long">&nbsp;Quote</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Flooring &amp; tile installed <span>right.</span><span id="inCity"></span></h1>
+        <p class="what"><b>Free estimates.</b> Plank, tile, marble and mosaic floors, installed clean and square. Text Michael and get a price.</p>
+        <div class="ctas">
+          <a class="btn" href="tel:+17065775487" data-call>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+            Call Now
+          </a>
+          <a class="btn line" href="#quote">Get a Free Quote</a>
+        </div>
+        <p class="note">Text or call <b data-phone>706-577-5487</b></p>
+      </div>
+      <div class="board" role="img" aria-label="Flooring samples: oak, walnut and grey plank, marble, slate and stone tile">
+        <div class="sw slate"></div><div class="sw marble"></div><div class="sw ash"></div>
+        <div class="sw walnut"></div><div class="sw oak"></div><div class="sw stone"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Badges: add real ones in CONFIG.badges at the bottom of this file. Hidden while empty. -->
+  <div class="trust" id="trust" hidden>
+    <div class="wrap"><ul id="badges"></ul></div>
+  </div>
+
+  <!-- Reviews: add real ones in CONFIG.reviews at the bottom of this file. Hidden while empty. -->
+  <section id="reviews" hidden>
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">Customer reviews</span><h2>What customers say</h2></div>
+      <div class="reviews" id="reviewList"></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">What we install</span>
+        <h2>Floors and tile</h2>
+        <p>Bring the material you picked, or ask Michael what fits the room.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="chip c1"></div><div class="b"><h3>Plank flooring</h3><p>Wood-look and wood planks laid straight and tight.</p></div></article>
+        <article class="card"><div class="chip c2"></div><div class="b"><h3>Floor tile</h3><p>Porcelain, marble-look and stone for kitchens, baths and entries.</p></div></article>
+        <article class="card"><div class="chip c3"></div><div class="b"><h3>Wall &amp; backsplash</h3><p>Crisp edges and clean grout lines.</p></div></article>
+        <article class="card"><div class="chip c4"></div><div class="b"><h3>Mosaic &amp; pattern</h3><p>Hex and custom layouts that take patience.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" style="padding-top:0">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">How it works</span><h2>Text. Quote. Install.</h2></div>
+      <ol class="steps">
+        <li><span class="n">1</span><h3>Text Michael</h3><p>Send a few details and a photo of the space.</p></li>
+        <li><span class="n">2</span><h3>Free estimate</h3><p>You get a clear number before you decide anything.</p></li>
+        <li><span class="n">3</span><h3>Pick a start date</h3><p>Choose materials and a day that fits you.</p></li>
+        <li><span class="n">4</span><h3>Installed, cleaned up</h3><p>The room is left ready to use.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">Why Stacey's</span><h2>Your project. Our hands.</h2></div>
+      <ul>
+        <li><h3>Direct line</h3><p>You deal with Michael from the first text to the last grout line.</p></li>
+        <li><h3>Free estimates</h3><p>Ask for a price and get one. Nothing to sign to find out.</p></li>
+        <li><h3>Flooring and tile, one crew</h3><p>One contractor for plank, tile and mosaic, so every room matches.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="quote">
+    <div class="wrap quote-grid">
+      <div>
+        <span class="eyebrow">Free estimates</span>
+        <h2 style="font-size:clamp(38px,10vw,60px);font-weight:800;margin-top:8px">Get your quote</h2>
+        <a class="big-phone" href="tel:+17065775487" data-call data-phone>706-577-5487</a>
+        <p class="sub">Call or text Michael, or send the short form and he will text you back.</p>
+      </div>
+
+      <form id="leadForm" novalidate>
+        <h3>Get an instant quote</h3>
+        <div class="f"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+        <div class="f"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(555) 555-5555" required></div>
+        <div class="row2">
+          <div class="f"><label for="service">Service needed</label>
+            <select id="service" name="service" required>
+              <option value="">Choose one</option><option>Plank flooring</option><option>Floor tile</option><option>Backsplash / wall tile</option><option>Mosaic / pattern</option><option>Not sure yet</option>
+            </select></div>
+          <div class="f"><label for="zip">Zip code</label><input id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="12345" required></div>
+        </div>
+        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="err" id="err" role="alert"></div>
+        <button class="btn" type="submit" id="send">Send my request</button>
+        <p class="fine">We only use this to reply about your estimate.</p>
+      </form>
+
+      <div class="done" id="done" hidden role="status" aria-live="polite">
+        <h3>Request received</h3>
+        <p id="doneText"></p>
+        <a class="btn dark" href="tel:+17065775487" data-call>Call 706-577-5487</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Stacey's Contracting LLC</b>
+    <span>Your project. Our hands.</span>
+    <span>Flooring &amp; tile installation · Free estimates · <a href="tel:+17065775487">706-577-5487</a></span>
+  </div>
+</footer>
+
+<nav class="bar" aria-label="Quick contact">
+  <a class="alt" href="tel:+17065775487" data-call>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>Call
+  </a>
+  <a href="#quote">Free Quote</a>
+</nav>
+
+<script>
+/* ====== EDIT THIS BLOCK ====== */
+var CONFIG = {
+  phone: "706-577-5487",
+  phoneIntl: "+17065775487",
+  owner: "Michael",
+
+  // Service area, e.g. "Columbus, GA". Shows in the headline when filled in.
+  city: "",
+
+  // Real badges only, e.g. ["Licensed & Insured", "Free Estimates"]. Section hides while empty.
+  badges: [],
+
+  // Real reviews only. Section hides while empty.
+  // { name: "Customer name", text: "Review text", source: "Google" }
+  reviews: [],
+
+  // Where the form posts (Formspree, Netlify Forms, your own endpoint). Leave "" to
+  // open the visitor's text-message app with the request pre-written instead.
+  formEndpoint: "",
+
+  // Shown in the confirmation message. Only set this to a promise you will keep.
+  responseTime: ""
+};
+/* ====== END CONFIG ====== */
+
+(function(){
+  var $ = function(id){return document.getElementById(id)};
+
+  if (CONFIG.city) $("inCity").textContent = " in " + CONFIG.city + ".";
+
+  if (CONFIG.badges.length){
+    $("badges").innerHTML = CONFIG.badges.map(function(b){return "<li>"+esc(b)+"</li>"}).join("");
+    $("trust").hidden = false;
+  }
+  if (CONFIG.reviews.length){
+    $("reviewList").innerHTML = CONFIG.reviews.slice(0,5).map(function(r){
+      return '<figure class="rev" style="margin:0"><div class="stars" aria-hidden="true">★★★★★</div><p>“'+esc(r.text)+'”</p><cite>'+esc(r.name)+(r.source?" · "+esc(r.source):"")+'</cite></figure>';
+    }).join("");
+    $("reviews").hidden = false;
+  }
+  function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+
+  var form = $("leadForm"), err = $("err");
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var d = {name:$("name").value.trim(), phone:$("phone").value.trim(), service:$("service").value, zip:$("zip").value.trim()};
+    var digits = d.phone.replace(/\D/g,"");
+    if (!d.name) return fail("Please enter your name.", "name");
+    if (digits.length < 10) return fail("Please enter a 10-digit phone number.", "phone");
+    if (!d.service) return fail("Please choose a service.", "service");
+    if (!/^\d{5}$/.test(d.zip)) return fail("Please enter a 5-digit zip code.", "zip");
+    if (form.company.value) return; /* honeypot */
+    err.textContent = "";
+
+    var text = "Hi " + CONFIG.owner + ", I'm " + d.name + ". I'd like a free quote for " + d.service.toLowerCase() +
+               " (zip " + d.zip + "). You can reach me at " + d.phone + ".";
+
+    if (CONFIG.formEndpoint){
+      $("send").disabled = true; $("send").textContent = "Sending...";
+      fetch(CONFIG.formEndpoint, {method:"POST", headers:{"Content-Type":"application/json","Accept":"application/json"}, body:JSON.stringify(d)})
+        .then(function(r){ if(!r.ok) throw 0; success(false, text); })
+        .catch(function(){ $("send").disabled=false; $("send").textContent="Send my request"; fail("That did not send. Please call or text "+CONFIG.phone+".", null); });
+    } else {
+      success(true, text);
+    }
+  });
+
+  function fail(msg, id){ err.textContent = msg; if(id) $(id).focus(); }
+
+  function success(viaText, text){
+    form.hidden = true;
+    var t = "Thanks! " + CONFIG.owner + " has your details and will text you at " + $("phone").value.trim() + ".";
+    if (CONFIG.responseTime) t += " Expect a reply " + CONFIG.responseTime + ".";
+    if (viaText) t = "Almost done. Your message to " + CONFIG.owner + " is ready in your texting app. Press send to finish.";
+    $("doneText").textContent = t;
+    $("done").hidden = false;
+    $("done").scrollIntoView({behavior:"smooth", block:"center"});
+    if (viaText) location.href = "sms:" + CONFIG.phoneIntl + "?&body=" + encodeURIComponent(text);
+  }
+})();
+</script>
+</body>
+</html>
